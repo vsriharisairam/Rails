@@ -1,0 +1,21 @@
+<div class="create">
+  <div class="container">
+ <h1><CENTER>Enroll new Vendor</CENTER></h1>
+
+    <%= form_for(@vendor) do |f| %>
+
+          ID
+          <%= f.text_area :vendor_id %>
+        NAME
+          <%= f.text_area :name %>
+        ADDRESS
+          <%= f.text_area :address %>
+        CONTACT
+          <%= f.text_area :contact_no %>
+        <div class="actions">
+          <%= f.submit "Create" %>
+        </div>
+        <% end %>
+
+  </div>
+</div>

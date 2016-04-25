@@ -1,0 +1,13 @@
+<h1><CENTER>Update</CENTER></h1>
+
+<%= form_for(@vendor) do |f| %>
+    NAME
+    <%= f.text_area :name %>
+    ADDRESS
+    <%= f.text_area :address %>
+    CONTACT
+    <%= f.text_area :contact_no %>
+    <div class="btn">
+      <%= f.submit "Update" %>
+    </div>
+<% end %>

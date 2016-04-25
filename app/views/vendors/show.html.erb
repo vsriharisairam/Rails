@@ -1,0 +1,19 @@
+<div>
+  <table>
+    <tr>
+      <td>Vendor</td>
+      <td> Name</td>
+      <td>Address</td>
+      <td> Contact_No</td>
+    </tr>
+  <tr>
+    <td><%= @vendor.vendor_id %></td>
+    <td><%= @vendor.name %></td>
+    <td><%= @vendor.address %></td>
+    <td><%= @vendor.contact_no %></td>
+    <td><%= link_to 'Update', edit_vendor_path(@vendor) %></td>
+    <td><%= link_to 'Destroy', delete_vendor_path(@vendor) ,method: :delete,
+    data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    </table>
+</div>
